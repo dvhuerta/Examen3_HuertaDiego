@@ -4,6 +4,6 @@ export default {
         host: 'localhost',
         user: 'root',
         password: 'admin123',
-        database: 'test1'
+        database: 'examen3'
     }
 }

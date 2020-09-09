@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import productRouter from './routes/productRoutes';
+import categoriaRouter from './routes/categoriasRoutes';
 
 import morgan from 'morgan';
 import cors from 'cors';
@@ -21,7 +21,7 @@ class Server {
         this.app.use(express.urlencoded({extended: false}));
     }
     routes(): void {
-       this.app.use('/api/product',productRouter);
+       this.app.use('/api/categoria',categoriaRouter);
     }
     
     start() {
